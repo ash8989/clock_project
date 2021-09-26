@@ -6,8 +6,7 @@ const currSec = document.getElementById("sec");
 const currAmPm = document.getElementById("amPm");
 
 function addZero(currentTime){
-    currentTime < 10 ? '0'+ currentTime : currentTime;
-    return currentTime;
+    return currentTime < 10 ? '0'.concat(currentTime) : currentTime;
 
 }
 
@@ -50,7 +49,7 @@ function afternoon(){
     imageUpdate.style.backgroundImage = "url('./lunch_image.png')";
 };
 
-////function for evening
+////function for night
 function night(){
     wishUpdate.innerHTML = "GOOD NIGHT !!";
     textUpdate.innerHTML = "IT'S NIGHT , SO GO & SLEEP !!";
@@ -91,10 +90,10 @@ execution();
 const partyTime = document.querySelector('#party-time');
 
 //////manipulating on accessing data using Event Handler
-const isParty = false;
+let isParty = false;
 partyTime.addEventListener("click", () => {
     if(isParty){
-        partyTime.innerHTML = "IT'S PARTY TIME !!";
+        partyTime.innerHTML = "PARTY TIME !!";
         execution();
     }
     else{
@@ -103,7 +102,7 @@ partyTime.addEventListener("click", () => {
         textUpdate.innerHTML = "LET'S ENJOY THE PARTY DUDE !!";
         imageUpdate.style.backgroundImage = "url('./party.svg')";
     }
-    isParty != isParty;
+    isParty =! isParty;
 });
   
 
