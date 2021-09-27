@@ -41,12 +41,7 @@ body{
     z-index: -2;
     opacity: 0.22;
 }
-/* .flex{
-    display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-around;
-} */
+
 .sub-text{
     font-size: 23px;
     text-align: center;

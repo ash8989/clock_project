@@ -106,15 +106,20 @@ partyTime.addEventListener("click", () => {
 });
   
 
-// partyTime.addEventListener("click", () =>
-// {
-//     partyTime.innerHTML = "Again Click to End Party";
-//     wishUpdate.innerHTML = "IT'S PARTY TIME !!";
-//     textUpdate.innerHTML = "LET'S ENJOY THE PARTY DUDE !!";
-//     imageUpdate.style.backgroundImage = "url('./party.svg')";
-// });
+// //select slot - morning
+const morningSlot = document.querySelector('#select1');
+morningSlot.addEventListener("click", ()=>{
+  morning();
+});
 
-// // partyTime.addEventListener("click", () =>
-// // {
-// //     execution();
-// // });
+// //time slot - afternoon
+const afternoonSlot = document.querySelector('#select2');
+afternoonSlot.addEventListener("click", ()=>{
+  afternoon();
+});
+
+// //time slot-night
+const nightSlot = document.querySelector('#select3');
+nightSlot.addEventListener("click", ()=>{
+  night();
+});
