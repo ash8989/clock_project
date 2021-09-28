@@ -63,6 +63,13 @@ function remaining(){
     imageUpdate.style.backgroundImage = "url('./chill.svg')";
 }
 
+////function for free time
+function freeTime(){
+    wishUpdate.innerHTML = "ENJOY YOUR PARTY !!";
+    textUpdate.innerHTML = "PARTY TIME , LET'S ROCK !!";
+    imageUpdate.style.backgroundImage = "url('./party.svg')";
+}
+
 //////conditions for these functions
 function execution()
 {
@@ -106,20 +113,95 @@ partyTime.addEventListener("click", () => {
 });
   
 
-// //select slot - morning
-const morningSlot = document.querySelector('#select1');
-morningSlot.addEventListener("click", ()=>{
-  morning();
-});
+// // //select slot - morning
+// const morningSlot = document.querySelector('#select1');
+// morningSlot.addEventListener("click", ()=>{
+//   morning();
+// });
 
-// //time slot - afternoon
-const afternoonSlot = document.querySelector('#select2');
-afternoonSlot.addEventListener("click", ()=>{
-  afternoon();
-});
+// // //time slot - afternoon
+// const afternoonSlot = document.querySelector('#select2');
+// afternoonSlot.addEventListener("click", ()=>{
+//   afternoon();
+// });
 
-// //time slot-night
-const nightSlot = document.querySelector('#select3');
-nightSlot.addEventListener("click", ()=>{
-  night();
-});
+// // //time slot-night
+// const nightSlot = document.querySelector('#select3');
+// nightSlot.addEventListener("click", ()=>{
+//   night();
+// });
+
+
+///////////////////////code for select section 1
+let select = document.querySelector('#select1');
+select.addEventListener("change", update);
+function update() {
+    var choice = select.value;
+    if(choice === 'blank'){
+        execution();
+    }
+    else if(choice === '5 AM - 12 AM'){
+        morning();
+    }
+    else if( choice === '12 PM - 6 PM'){
+        afternoon();
+    }
+    else if( choice === '6 PM - 12 PM'){
+        night();
+    }
+    else {
+        freeTime();
+    }
+}
+
+update();
+
+
+//////////////////code for select section 2
+let select2 = document.querySelector('#select2');
+select2.addEventListener("change", update1);
+function update1() {
+    var choice = select2.value;
+    if(choice === 'blank'){
+        execution();
+    }
+    else if(choice === '5 AM - 12 AM'){
+        morning();
+    }
+    else if( choice === '12 PM - 6 PM'){
+        afternoon();
+    }
+    else if( choice === '6 PM - 12 PM'){
+        night();
+    }
+    else {
+        freeTime();
+    }
+}
+
+update1();
+
+
+///////////////////////code for select section 3
+let select3 = document.querySelector('#select3');
+select3.addEventListener("change", update2);
+function update2() {
+    var choice = select3.value;
+    if(choice === 'blank'){
+        execution();
+    }
+    else if(choice === '5 AM - 12 AM'){
+        morning();
+    }
+    else if( choice === '12 PM - 6 PM'){
+        afternoon();
+    }
+    else if( choice === '6 PM - 12 PM'){
+        night();
+    }
+    else {
+        freeTime();
+    }
+}
+
+update2();
