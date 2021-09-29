@@ -383,10 +383,10 @@ function update2() {
         night();
     }
     else if( choice === '10 PM - 11 PM'){
-        afternoon();
+        night();
     }
     else if( choice === '11 PM - 12 PM'){
-        morning();
+        night();
     }
    
 }
