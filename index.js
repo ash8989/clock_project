@@ -140,18 +140,81 @@ function update() {
     if(choice === 'blank'){
         execution();
     }
-    else if(choice === '5 AM - 12 AM'){
+    else if(choice === '12 AM - 01 AM'){
         morning();
     }
-    else if( choice === '12 PM - 6 PM'){
-        afternoon();
+    else if( choice === '01 AM - 02 AM'){
+        morning();
     }
-    else if( choice === '6 PM - 12 PM'){
-        night();
+    else if( choice === '02 AM - 03 AM'){
+        morning();
     }
-    else {
-        freeTime();
+    else if( choice === '03 AM - 04 AM'){
+        morning();
     }
+    else if( choice === '04 AM - 05 AM'){
+        morning();
+    }
+    else if( choice === '05 AM - 06 AM'){
+        morning();
+    }
+    else if( choice === '06 AM - 07 AM'){
+        morning();
+    }
+    else if( choice === '07 AM - 08 AM'){
+        morning();
+    }
+    else if( choice === '08 AM - 09 AM'){
+        morning();
+    }
+    else if( choice === '09 AM - 10 AM'){
+        morning();
+    }
+    else if( choice === '10 AM - 11 AM'){
+        morning();
+    }
+    else if( choice === '11 AM - 12 AM'){
+        morning();
+    }
+    else if( choice === '12 PM - 01 PM'){
+        morning();
+    }
+    else if( choice === '01 PM - 02 PM'){
+        morning();
+    }
+    else if( choice === '02 PM - 03 PM'){
+        morning();
+    }
+    else if( choice === '03 PM - 04 PM'){
+        morning();
+    }
+    else if( choice === '04 PM - 05 PM'){
+        morning();
+    }
+    else if( choice === '05 PM - 06 PM'){
+        morning();
+    }
+    else if( choice === '06 PM - 07 PM'){
+        morning();
+    }
+    else if( choice === '07 PM - 08 PM'){
+        morning();
+    }
+    else if( choice === '08 PM - 09 PM'){
+        morning();
+    }
+    else if( choice === '09 PM - 10 PM'){
+        morning();
+    }
+    else if( choice === '10 PM - 11 PM'){
+        morning();
+    }
+    else if( choice === '11 PM - 12 PM'){
+        morning();
+    }
+    // else {
+    //     freeTime();
+    // }
 }
 
 update();
@@ -165,18 +228,81 @@ function update1() {
     if(choice === 'blank'){
         execution();
     }
-    else if(choice === '5 AM - 12 AM'){
-        morning();
-    }
-    else if( choice === '12 PM - 6 PM'){
+    else if(choice === '12 AM - 01 AM'){
         afternoon();
     }
-    else if( choice === '6 PM - 12 PM'){
-        night();
+    else if( choice === '01 AM - 02 AM'){
+        afternoon();
     }
-    else {
-        freeTime();
+    else if( choice === '02 AM - 03 AM'){
+        afternoon();
     }
+    else if( choice === '03 AM - 04 AM'){
+        afternoon();
+    }
+    else if( choice === '04 AM - 05 AM'){
+        afternoon();
+    }
+    else if( choice === '05 AM - 06 AM'){
+        afternoon();
+    }
+    else if( choice === '06 AM - 07 AM'){
+        afternoon();
+    }
+    else if( choice === '07 AM - 08 AM'){
+        afternoon();
+    }
+    else if( choice === '08 AM - 09 AM'){
+        afternoon();
+    }
+    else if( choice === '09 AM - 10 AM'){
+        afternoon();
+    }
+    else if( choice === '10 AM - 11 AM'){
+        afternoon();
+    }
+    else if( choice === '11 AM - 12 AM'){
+        afternoon();
+    }
+    else if( choice === '12 PM - 01 PM'){
+        afternoon();
+    }
+    else if( choice === '01 PM - 02 PM'){
+        afternoon();
+    }
+    else if( choice === '02 PM - 03 PM'){
+        afternoon();
+    }
+    else if( choice === '03 PM - 04 PM'){
+        afternoon();
+    }
+    else if( choice === '04 PM - 05 PM'){
+        afternoon();
+    }
+    else if( choice === '05 PM - 06 PM'){
+        afternoon();
+    }
+    else if( choice === '06 PM - 07 PM'){
+        afternoon();
+    }
+    else if( choice === '07 PM - 08 PM'){
+        afternoon();
+    }
+    else if( choice === '08 PM - 09 PM'){
+        afternoon();
+    }
+    else if( choice === '09 PM - 10 PM'){
+        afternoon();
+    }
+    else if( choice === '10 PM - 11 PM'){
+        afternoon();
+    }
+    else if( choice === '11 PM - 12 PM'){
+        afternoon();
+    }
+    // else {
+    //     freeTime();
+    // }
 }
 
 update1();
@@ -190,18 +316,79 @@ function update2() {
     if(choice === 'blank'){
         execution();
     }
-    else if(choice === '5 AM - 12 AM'){
-        morning();
-    }
-    else if( choice === '12 PM - 6 PM'){
-        afternoon();
-    }
-    else if( choice === '6 PM - 12 PM'){
+    else if(choice === '12 AM - 01 AM'){
         night();
     }
-    else {
-        freeTime();
+    else if( choice === '01 AM - 02 AM'){
+        night();
     }
+    else if( choice === '02 AM - 03 AM'){
+        night();
+    }
+    else if( choice === '03 AM - 04 AM'){
+        night();
+    }
+    else if( choice === '04 AM - 05 AM'){
+        night();
+    }
+    else if( choice === '05 AM - 06 AM'){
+        night();
+    }
+    else if( choice === '06 AM - 07 AM'){
+        night();
+    }
+    else if( choice === '07 AM - 08 AM'){
+        night();
+    }
+    else if( choice === '08 AM - 09 AM'){
+        night();
+    }
+    else if( choice === '09 AM - 10 AM'){
+        night();
+    }
+    else if( choice === '10 AM - 11 AM'){
+        night();
+    }
+    else if( choice === '11 AM - 12 AM'){
+        night();
+    }
+    else if( choice === '12 PM - 01 PM'){
+        night();
+    }
+    else if( choice === '01 PM - 02 PM'){
+        night();
+    }
+    else if( choice === '02 PM - 03 PM'){
+        night();
+    }
+    else if( choice === '03 PM - 04 PM'){
+        night();
+    }
+    else if( choice === '04 PM - 05 PM'){
+        night();
+    }
+    else if( choice === '05 PM - 06 PM'){
+        night();
+    }
+    else if( choice === '06 PM - 07 PM'){
+        night();
+    }
+    else if( choice === '07 PM - 08 PM'){
+        night();
+    }
+    else if( choice === '08 PM - 09 PM'){
+        night();
+    }
+    else if( choice === '09 PM - 10 PM'){
+        night();
+    }
+    else if( choice === '10 PM - 11 PM'){
+        afternoon();
+    }
+    else if( choice === '11 PM - 12 PM'){
+        morning();
+    }
+   
 }
 
 update2();
