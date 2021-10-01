@@ -65,15 +65,15 @@ function remaining(){
 
 ////function for free time
 function freeTime(){
-    wishUpdate.innerHTML = "ENJOY YOUR PARTY !!";
-    textUpdate.innerHTML = "PARTY TIME , LET'S ROCK !!";
+    wishUpdate.innerHTML = "DEFAULT !!";
+    textUpdate.innerHTML = "IT'S DEFAULT IMAGE !!";
     imageUpdate.style.backgroundImage = "url('./party.svg')";
 }
 
 //////conditions for these functions
 function execution()
 {
-    if(hr>=5 && hr<12){
+    if(hr>=4 && hr<12){
         morning();
     }
     else if(hr>=12 && hr<18){
@@ -111,6 +111,48 @@ partyTime.addEventListener("click", () => {
     }
     isParty =! isParty;
 });
+
+
+//select option = morning
+const morningSelect = document.querySelector('#select1');
+morningSelect.addEventListener("change", function (){ 
+
+console.log(hr);
+console.log(this.value);
+
+if (this.value==hr) {    
+    morning();
+}
+else{
+    freeTime();
+}
+
+});
+
+
+//select option = afternoon
+const afternoonSelect = document.querySelector('#select2');
+afternoonSelect.addEventListener("change", function (){
+if (this.value==hr) {
+    afternoon();
+}
+else{
+    freeTime();
+ }
+
+});
+
+//select option = night
+const nightSelect = document.querySelector('#select3');
+nightSelect.addEventListener("change", function (){
+if (this.value==hr) {
+    night();
+}
+else{
+    freeTime();
+ }
+});
+
   
 
 // // //select slot - morning
@@ -132,263 +174,92 @@ partyTime.addEventListener("click", () => {
 // });
 
 
-///////////////////////code for select section 1
-let select = document.querySelector('#select1');
-select.addEventListener("change", update);
-function update() {
-    var choice = select.value;
-    if(choice === 'blank'){
-        execution();
-    }
-    else if(choice === '12 AM - 01 AM'){
-        morning();
-    }
-    else if( choice === '01 AM - 02 AM'){
-        morning();
-    }
-    else if( choice === '02 AM - 03 AM'){
-        morning();
-    }
-    else if( choice === '03 AM - 04 AM'){
-        morning();
-    }
-    else if( choice === '04 AM - 05 AM'){
-        morning();
-    }
-    else if( choice === '05 AM - 06 AM'){
-        morning();
-    }
-    else if( choice === '06 AM - 07 AM'){
-        morning();
-    }
-    else if( choice === '07 AM - 08 AM'){
-        morning();
-    }
-    else if( choice === '08 AM - 09 AM'){
-        morning();
-    }
-    else if( choice === '09 AM - 10 AM'){
-        morning();
-    }
-    else if( choice === '10 AM - 11 AM'){
-        morning();
-    }
-    else if( choice === '11 AM - 12 AM'){
-        morning();
-    }
-    else if( choice === '12 PM - 01 PM'){
-        morning();
-    }
-    else if( choice === '01 PM - 02 PM'){
-        morning();
-    }
-    else if( choice === '02 PM - 03 PM'){
-        morning();
-    }
-    else if( choice === '03 PM - 04 PM'){
-        morning();
-    }
-    else if( choice === '04 PM - 05 PM'){
-        morning();
-    }
-    else if( choice === '05 PM - 06 PM'){
-        morning();
-    }
-    else if( choice === '06 PM - 07 PM'){
-        morning();
-    }
-    else if( choice === '07 PM - 08 PM'){
-        morning();
-    }
-    else if( choice === '08 PM - 09 PM'){
-        morning();
-    }
-    else if( choice === '09 PM - 10 PM'){
-        morning();
-    }
-    else if( choice === '10 PM - 11 PM'){
-        morning();
-    }
-    else if( choice === '11 PM - 12 PM'){
-        morning();
-    }
-    // else {
-    //     freeTime();
-    // }
-}
+// ///////////////////////code for select section 1
+// let select = document.querySelector('#select1');
+// select.addEventListener("change", update);
+// function update() {
+//     var choice = select.value;
+//     if(choice === 'blank'){
+//         execution();
+//     }
+//     else if(choice === '12 AM - 01 AM'){
+//         freeTime();
+//     }
+//     else if( choice === '01 AM - 02 AM'){
+//         freeTime();
+//     }
+//     else if( choice === '02 AM - 03 AM'){
+//         freeTime();
+//     }
+//     else if( choice === '03 AM - 04 AM'){
+//         freeTime();
+//     }
+//     else if( choice === '04 AM - 05 AM'){
+//         morning();
+//     }
+//     else if( choice === '05 AM - 06 AM'){
+//         morning();
+//     }
+//     else if( choice === '06 AM - 07 AM'){
+//         morning();
+//     }
+//     else if( choice === '07 AM - 08 AM'){
+//         morning();
+//     }
+//     else if( choice === '08 AM - 09 AM'){
+//         morning();
+//     }
+//     else if( choice === '09 AM - 10 AM'){
+//         morning();
+//     }
+//     else if( choice === '10 AM - 11 AM'){
+//         morning();
+//     }
+//     else if( choice === '11 AM - 12 AM'){
+//         morning();
+//     }
+//     else if( choice === '12 PM - 01 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '01 PM - 02 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '02 PM - 03 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '03 PM - 04 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '04 PM - 05 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '05 PM - 06 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '06 PM - 07 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '07 PM - 08 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '08 PM - 09 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '09 PM - 10 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '10 PM - 11 PM'){
+//         freeTime();
+//     }
+//     else if( choice === '11 PM - 12 PM'){
+//         freeTime();
+//     }
+//     // else {
+//     //     freeTime();
+//     // }
+// }
 
-update();
-
-
-//////////////////code for select section 2
-let select2 = document.querySelector('#select2');
-select2.addEventListener("change", update1);
-function update1() {
-    var choice = select2.value;
-    if(choice === 'blank'){
-        execution();
-    }
-    else if(choice === '12 AM - 01 AM'){
-        afternoon();
-    }
-    else if( choice === '01 AM - 02 AM'){
-        afternoon();
-    }
-    else if( choice === '02 AM - 03 AM'){
-        afternoon();
-    }
-    else if( choice === '03 AM - 04 AM'){
-        afternoon();
-    }
-    else if( choice === '04 AM - 05 AM'){
-        afternoon();
-    }
-    else if( choice === '05 AM - 06 AM'){
-        afternoon();
-    }
-    else if( choice === '06 AM - 07 AM'){
-        afternoon();
-    }
-    else if( choice === '07 AM - 08 AM'){
-        afternoon();
-    }
-    else if( choice === '08 AM - 09 AM'){
-        afternoon();
-    }
-    else if( choice === '09 AM - 10 AM'){
-        afternoon();
-    }
-    else if( choice === '10 AM - 11 AM'){
-        afternoon();
-    }
-    else if( choice === '11 AM - 12 AM'){
-        afternoon();
-    }
-    else if( choice === '12 PM - 01 PM'){
-        afternoon();
-    }
-    else if( choice === '01 PM - 02 PM'){
-        afternoon();
-    }
-    else if( choice === '02 PM - 03 PM'){
-        afternoon();
-    }
-    else if( choice === '03 PM - 04 PM'){
-        afternoon();
-    }
-    else if( choice === '04 PM - 05 PM'){
-        afternoon();
-    }
-    else if( choice === '05 PM - 06 PM'){
-        afternoon();
-    }
-    else if( choice === '06 PM - 07 PM'){
-        afternoon();
-    }
-    else if( choice === '07 PM - 08 PM'){
-        afternoon();
-    }
-    else if( choice === '08 PM - 09 PM'){
-        afternoon();
-    }
-    else if( choice === '09 PM - 10 PM'){
-        afternoon();
-    }
-    else if( choice === '10 PM - 11 PM'){
-        afternoon();
-    }
-    else if( choice === '11 PM - 12 PM'){
-        afternoon();
-    }
-    // else {
-    //     freeTime();
-    // }
-}
-
-update1();
+// update();
 
 
-///////////////////////code for select section 3
-let select3 = document.querySelector('#select3');
-select3.addEventListener("change", update2);
-function update2() {
-    var choice = select3.value;
-    if(choice === 'blank'){
-        execution();
-    }
-    else if(choice === '12 AM - 01 AM'){
-        night();
-    }
-    else if( choice === '01 AM - 02 AM'){
-        night();
-    }
-    else if( choice === '02 AM - 03 AM'){
-        night();
-    }
-    else if( choice === '03 AM - 04 AM'){
-        night();
-    }
-    else if( choice === '04 AM - 05 AM'){
-        night();
-    }
-    else if( choice === '05 AM - 06 AM'){
-        night();
-    }
-    else if( choice === '06 AM - 07 AM'){
-        night();
-    }
-    else if( choice === '07 AM - 08 AM'){
-        night();
-    }
-    else if( choice === '08 AM - 09 AM'){
-        night();
-    }
-    else if( choice === '09 AM - 10 AM'){
-        night();
-    }
-    else if( choice === '10 AM - 11 AM'){
-        night();
-    }
-    else if( choice === '11 AM - 12 AM'){
-        night();
-    }
-    else if( choice === '12 PM - 01 PM'){
-        night();
-    }
-    else if( choice === '01 PM - 02 PM'){
-        night();
-    }
-    else if( choice === '02 PM - 03 PM'){
-        night();
-    }
-    else if( choice === '03 PM - 04 PM'){
-        night();
-    }
-    else if( choice === '04 PM - 05 PM'){
-        night();
-    }
-    else if( choice === '05 PM - 06 PM'){
-        night();
-    }
-    else if( choice === '06 PM - 07 PM'){
-        night();
-    }
-    else if( choice === '07 PM - 08 PM'){
-        night();
-    }
-    else if( choice === '08 PM - 09 PM'){
-        night();
-    }
-    else if( choice === '09 PM - 10 PM'){
-        night();
-    }
-    else if( choice === '10 PM - 11 PM'){
-        night();
-    }
-    else if( choice === '11 PM - 12 PM'){
-        night();
-    }
-   
-}
 
-update2();
